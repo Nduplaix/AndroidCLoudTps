@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MiniTP1</string>
+    <string name="recycler_view_button">recycler View</string>
+</resources>
