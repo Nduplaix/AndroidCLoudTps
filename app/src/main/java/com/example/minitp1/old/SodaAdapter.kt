@@ -1,4 +1,4 @@
-package com.example.minitp1
+package com.example.minitp1.old
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,13 +6,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.minitp1.R
 import com.example.minitp1.databinding.ItemCustomRecyclerBinding
 import com.example.minitp1.databinding.ItemCustomRecyclerFooterBinding
 import com.example.minitp1.databinding.ItemCustomRecyclerHeaderBinding
-import com.example.minitp1.model.SodaFooterSample
-import com.example.minitp1.model.SodaHeaderSample
-import com.example.minitp1.model.SodaObjectForRecycleView
-import com.example.minitp1.model.SodaPojo
+import com.example.minitp1.old.model.SodaFooterSample
+import com.example.minitp1.old.model.SodaHeaderSample
+import com.example.minitp1.old.model.SodaObjectForRecycleView
+import com.example.minitp1.old.model.SodaPojo
 
 private val diffItemUtils = object : DiffUtil.ItemCallback<SodaObjectForRecycleView>() {
 

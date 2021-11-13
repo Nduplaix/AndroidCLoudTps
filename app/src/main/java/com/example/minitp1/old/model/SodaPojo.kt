@@ -1,4 +1,4 @@
-package com.example.minitp1.model
+package com.example.minitp1.old.model
 
 sealed class SodaObjectForRecycleView() {
     abstract val id: Int

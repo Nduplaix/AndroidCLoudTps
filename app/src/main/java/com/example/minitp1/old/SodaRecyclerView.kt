@@ -1,7 +1,6 @@
-package com.example.minitp1
+package com.example.minitp1.old
 
 import android.os.Bundle
-import android.util.Log
 import android.view.HapticFeedbackConstants
 import android.view.View
 import android.widget.Toast
@@ -9,10 +8,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.minitp1.databinding.ActivityRecyclerViewBinding
-import com.example.minitp1.model.SodaFooterSample
-import com.example.minitp1.model.SodaHeaderSample
-import com.example.minitp1.model.SodaObjectForRecycleView
-import com.example.minitp1.model.SodaPojo
+import com.example.minitp1.old.model.SodaFooterSample
+import com.example.minitp1.old.model.SodaHeaderSample
+import com.example.minitp1.old.model.SodaObjectForRecycleView
+import com.example.minitp1.old.model.SodaPojo
 
 class SodaRecyclerView: AppCompatActivity() {
     private lateinit var binding: ActivityRecyclerViewBinding
@@ -64,9 +63,11 @@ class SodaRecyclerView: AppCompatActivity() {
         }.forEach { (isFruitsSoda, items) ->
             // For each mean for each list split
             // Here we have a map (key = isModulo) and each key have a list of it's items
-            result.add(SodaHeaderSample(0,
+            result.add(
+                SodaHeaderSample(0,
                 if (isFruitsSoda) "Soda \"with Fruits\"" else "Soda without fruits"
-            ))
+            )
+            )
             result.addAll(items)
             result.add(SodaFooterSample(0,"Soda numbers : ${items.size}"))
         }
